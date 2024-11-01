@@ -1,0 +1,551 @@
+[
+  {
+    "v": 3,
+    "name": "Selyo API",
+    "folders": [],
+    "requests": [
+      {
+        "headers": [],
+        "body": {
+          "contentType": null,
+          "body": null
+        },
+        "name": "Timestamp IN",
+        "method": "POST",
+        "requestVariables": [],
+        "testScript": "",
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "preRequestScript": "",
+        "params": [],
+        "endpoint": "https://echo.hoppscotch.io",
+        "v": "7"
+      }
+    ],
+    "auth": {
+      "authType": "none",
+      "authActive": true
+    },
+    "headers": []
+  },
+  {
+    "v": 3,
+    "name": "Selyo-API",
+    "folders": [
+      {
+        "v": 3,
+        "name": "Booth Stamp",
+        "folders": [],
+        "requests": [
+          {
+            "v": "7",
+            "testScript": "",
+            "endpoint": "<<API_URL>>/booth",
+            "headers": [],
+            "preRequestScript": "",
+            "params": [],
+            "requestVariables": [],
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "name": "Get All Booth",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "method": "GET"
+          },
+          {
+            "method": "POST",
+            "requestVariables": [],
+            "v": "7",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "headers": [],
+            "testScript": "",
+            "endpoint": "<<API_URL>>/booth",
+            "name": "Create Booth",
+            "params": [],
+            "preRequestScript": "",
+            "body": {
+              "body": "{\n  \"name\": \"Company Booth 1\",\n  \"owner\": \"owner1@example.com\"\n}",
+              "contentType": "application/json"
+            }
+          },
+          {
+            "requestVariables": [],
+            "v": "7",
+            "method": "POST",
+            "params": [],
+            "testScript": "",
+            "preRequestScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "headers": [],
+            "endpoint": "<<API_URL>>/booth/1sy1gzzmfb1ik75pv3q3/collection",
+            "body": {
+              "body": "{\n\t\"collectionMetadataUri\": \"https://gist.githubusercontent.com/kimerran/b38064933096972d1ff64228cbf50a09/raw/ccf950ca4677337d50fb9cd0aae99254544c00e5/selyo-test-metadata.json\",\n  \"collectionName\": \"SelyoCollection\"\n}",
+              "contentType": "application/json"
+            },
+            "name": "Create NFT COllection"
+          },
+          {
+            "method": "POST",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "endpoint": "<<API_URL>>/booth/1sy1gzzmfb1ik75pv3q3/stamp",
+            "requestVariables": [],
+            "params": [],
+            "v": "7",
+            "headers": [],
+            "name": "Mint NFT to UID",
+            "preRequestScript": "",
+            "testScript": "",
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"uid\": \"B369AD2A\"\n}"
+            }
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": []
+      },
+      {
+        "v": 3,
+        "name": "Login",
+        "folders": [],
+        "requests": [
+          {
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "body": {
+              "body": null,
+              "contentType": "application/json"
+            },
+            "params": [],
+            "method": "GET",
+            "preRequestScript": "",
+            "headers": [],
+            "requestVariables": [],
+            "v": "7",
+            "name": "Get All Acccounts",
+            "testScript": "",
+            "endpoint": "http://localhost:3000/account"
+          },
+          {
+            "requestVariables": [],
+            "params": [],
+            "v": "7",
+            "testScript": "",
+            "endpoint": "http://localhost:3000/account/token",
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "name": "Get All Tokens",
+            "preRequestScript": "",
+            "headers": [],
+            "method": "GET",
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            }
+          },
+          {
+            "requestVariables": [],
+            "headers": [],
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "params": [],
+            "method": "POST",
+            "v": "7",
+            "preRequestScript": "",
+            "name": "Create Account",
+            "body": {
+              "body": "{\n  \"email\": \"budjiangelO@gmail.com\",\n  \"pass\": \"password\"\n}",
+              "contentType": "application/json"
+            },
+            "endpoint": "http://localhost:3000/account/signup",
+            "testScript": ""
+          },
+          {
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "endpoint": "http://localhost:3000/account/login",
+            "requestVariables": [],
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"email\": \"budjiangelO@gmail.com\",\n  \"pass\": \"password\"\n}"
+            },
+            "method": "POST",
+            "headers": [],
+            "name": "Log in your Account",
+            "preRequestScript": "",
+            "v": "7",
+            "testScript": "",
+            "params": []
+          },
+          {
+            "requestVariables": [],
+            "endpoint": "http://localhost:3000/account/newEmail@gmail.com",
+            "method": "PUT",
+            "testScript": "",
+            "name": "Change Email",
+            "headers": [],
+            "preRequestScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "params": [],
+            "v": "7",
+            "body": {
+              "body": "{\n  \"email\": \"newEmail@gmail.com\"\n}",
+              "contentType": "application/json"
+            }
+          },
+          {
+            "headers": [],
+            "endpoint": "http://localhost:3000/account/newEmail@gmail.com",
+            "name": "Delete Account",
+            "params": [],
+            "testScript": "",
+            "requestVariables": [],
+            "preRequestScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "body": {
+              "body": null,
+              "contentType": null
+            },
+            "v": "7",
+            "method": "DELETE"
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": []
+      },
+      {
+        "v": 3,
+        "name": "Devices",
+        "folders": [],
+        "requests": [
+          {
+            "v": "7",
+            "testScript": "",
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"DeviceName\": \"Device2-room1\"\n}"
+            },
+            "endpoint": "<<API_URL>>/device",
+            "headers": [],
+            "name": "Get All Device",
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "requestVariables": [],
+            "params": [],
+            "preRequestScript": "",
+            "method": "GET"
+          },
+          {
+            "headers": [],
+            "v": "7",
+            "name": "Create New Device",
+            "preRequestScript": "",
+            "endpoint": "<<API_URL>>/device/create",
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "params": [],
+            "body": {
+              "body": "{\n  \"deviceId\": \"Panatak1\",\n  \"deviceName\": \"Device1-room1\",\n  \"apiUrl\": \"https://api.zelyo.quest/booth/1sy1gzzmfb1ik75pv3q3/stamp\"\n}",
+              "contentType": "application/json"
+            },
+            "requestVariables": [],
+            "testScript": "",
+            "method": "POST"
+          },
+          {
+            "params": [],
+            "headers": [],
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "testScript": "",
+            "name": "Update Device",
+            "preRequestScript": "",
+            "requestVariables": [],
+            "v": "7",
+            "endpoint": "<<API_URL>>/device/Panatak2",
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"apiUrl\": \"some asdasd2222\"\n}"
+            },
+            "method": "PUT"
+          },
+          {
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "preRequestScript": "",
+            "requestVariables": [],
+            "body": {
+              "body": null,
+              "contentType": null
+            },
+            "name": "Delete Device",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "endpoint": "<<API_URL>>/device/device",
+            "v": "7"
+          },
+          {
+            "body": {
+              "body": "{\n  \"deviceName\": \"Device1-room12\",\n  \"deviceId\": \"Device1\"\n}",
+              "contentType": "application/json"
+            },
+            "preRequestScript": "",
+            "headers": [],
+            "v": "7",
+            "name": "Get Device By Id",
+            "testScript": "",
+            "method": "GET",
+            "endpoint": "<<API_URL>>/device/Panatak1",
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "params": [],
+            "requestVariables": []
+          }
+        ],
+        "auth": {
+          "authType": "inherit",
+          "authActive": true
+        },
+        "headers": []
+      },
+      {
+        "v": 3,
+        "name": "Timestamps",
+        "folders": [],
+        "requests": [
+          {
+            "testScript": "",
+            "endpoint": "<<API_URL>>/timestamp",
+            "requestVariables": [],
+            "name": "Get all checked in",
+            "v": "7",
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "headers": [],
+            "method": "GET",
+            "body": {
+              "body": null,
+              "contentType": null
+            },
+            "params": [],
+            "preRequestScript": ""
+          },
+          {
+            "preRequestScript": "",
+            "name": "Check/Time in",
+            "params": [],
+            "method": "POST",
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "headers": [],
+            "body": {
+              "body": "{\n  \"email\": \"budjiangelo@gmail.com\"\n}",
+              "contentType": "application/json"
+            },
+            "endpoint": "<<API_URL>>/timestamp/in",
+            "testScript": "",
+            "v": "7",
+            "requestVariables": []
+          },
+          {
+            "v": "7",
+            "params": [],
+            "name": "Check/Time Out",
+            "testScript": "",
+            "requestVariables": [],
+            "method": "POST",
+            "preRequestScript": "",
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"email\": \"budjiangelo@gmail.com\"\n}"
+            },
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "endpoint": "<<API_URL>>/timestamp/out",
+            "headers": []
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": []
+      },
+      {
+        "v": 3,
+        "name": "Users",
+        "folders": [],
+        "requests": [
+          {
+            "testScript": "",
+            "name": "Create User",
+            "endpoint": "<<API_URL>>/user",
+            "headers": [],
+            "method": "POST",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "requestVariables": [],
+            "body": {
+              "body": "{\n  \"email\": \"sanwan@selyo.quest\",\n  \"name\": \"SanWan\"\n}",
+              "contentType": "application/json"
+            },
+            "v": "7",
+            "params": [],
+            "preRequestScript": ""
+          },
+          {
+            "params": [],
+            "method": "GET",
+            "headers": [],
+            "preRequestScript": "",
+            "v": "7",
+            "endpoint": "<<API_URL>>/user/B369AD2A",
+            "name": "Get User Profile",
+            "requestVariables": [],
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"deviceName\": \"Device1-room12\",\n  \"deviceId\": \"Device1\"\n}"
+            },
+            "auth": {
+              "authActive": true,
+              "authType": "inherit"
+            },
+            "testScript": ""
+          },
+          {
+            "params": [],
+            "endpoint": "<<API_URL>>/user/search?email=san",
+            "v": "7",
+            "body": {
+              "body": "{\n  \"deviceName\": \"Device1-room12\",\n  \"deviceId\": \"Device1\"\n}",
+              "contentType": "application/json"
+            },
+            "headers": [],
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "",
+            "requestVariables": [],
+            "name": "Search by email",
+            "method": "GET"
+          },
+          {
+            "name": "Update User",
+            "endpoint": "<<API_URL>>/user/lvbth697vt0wv6huafuf",
+            "requestVariables": [],
+            "params": [],
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "preRequestScript": "",
+            "headers": [],
+            "v": "7",
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"uid\": \"B369AD2A\"\n}"
+            },
+            "method": "PATCH"
+          },
+          {
+            "name": "Upload Users",
+            "endpoint": "<<API_URL>>/user/upload",
+            "requestVariables": [],
+            "params": [],
+            "testScript": "",
+            "auth": {
+              "authType": "inherit",
+              "authActive": true
+            },
+            "preRequestScript": "",
+            "headers": [],
+            "v": "7",
+            "body": {
+              "contentType": "multipart/form-data",
+              "body": [
+                {
+                  "key": "file",
+                  "value": [
+                    {}
+                  ],
+                  "active": true,
+                  "isFile": true
+                }
+              ]
+            },
+            "method": "POST"
+          }
+        ],
+        "auth": {
+          "authActive": true,
+          "authType": "inherit"
+        },
+        "headers": []
+      }
+    ],
+    "requests": [],
+    "auth": {
+      "authType": "none",
+      "authActive": true
+    },
+    "headers": []
+  }
+]

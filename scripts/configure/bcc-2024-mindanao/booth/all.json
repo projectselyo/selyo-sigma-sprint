@@ -1,0 +1,170 @@
+[
+    {
+      "booth": {
+        "id": "booth:0veqmjfz2ujbo5bmlzay",
+        "name": "Bitget"
+      },
+      "stamp": {
+        "boothId": "0veqmjfz2ujbo5bmlzay",
+        "collectionMetadataUri": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/sponsors/bitget.json",
+        "collectionName": "BCC2024 Mindanao (Bitget)",
+        "collectionPubkey": "GLs96afD68i8RD1VtxbfVjPs8v4m3ihNduCnHMrKDn7A",
+        "id": "stamp_collection:zmuzrmk91fq66edgq244"
+      },
+      "minted": 1
+    },
+    {
+      "booth": {
+        "id": "booth:275y6br5mieqrlgzhuv5",
+        "name": "OKX"
+      },
+      "stamp": {
+        "boothId": "275y6br5mieqrlgzhuv5",
+        "collectionMetadataUri": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/sponsors/okx.json",
+        "collectionName": "BCC2024 Mindanao (OKX)",
+        "collectionPubkey": "7xVjGcdmB71633xXK3XRm17vsWx5vfYD7VxNUuRFLAHt",
+        "id": "stamp_collection:nm0exydm11520s8rfjqz"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:2aesje2ahc46f76xqker",
+        "name": "Rosen Bridge"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:3wfgth9w6dgm0f5clyz9",
+        "name": "Sundries & Apple's Toy"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:5bb0r3inxf5mjhqyqycp",
+        "name": "Wormhole"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:5yh0rbvhubzjcfw41jo8",
+        "name": "Solana Foundation"
+      },
+      "stamp": {
+        "boothId": "5yh0rbvhubzjcfw41jo8",
+        "collectionMetadataUri": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/sponsors/solana-foundation.json",
+        "collectionName": "BCC2024 Mindanao (Solana Fdn)",
+        "collectionPubkey": "Fz7e9AuxWpx4VAqS8YBVrXvh3MmnkrhZ7BTCvvovQBec",
+        "id": "stamp_collection:vi1q9i7k8bzbvby22fdr"
+      },
+      "minted": 1
+    },
+    {
+      "booth": {
+        "id": "booth:7a3irzreuswzenodxkc6",
+        "name": "Blooms Coffee"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:7whwnsr2klk7tgovx2c7",
+        "name": "LBank"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:82toav2v6gbr9v7hif76",
+        "name": "Toy 4 Booth"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:8hilskxdne0ds0w3q5d4",
+        "name": "Lovelicious & Chona's Toys"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:bhqbsfzfzgz8xfhpdoj2",
+        "name": "PC Express / NVIDIA"
+      },
+      "stamp": {
+        "boothId": "bhqbsfzfzgz8xfhpdoj2",
+        "collectionMetadataUri": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/sponsors/pc-express.json",
+        "collectionName": "BCC2024 Mindanao (PC Express)",
+        "collectionPubkey": "2Lju4dwUr7EsHv4BNgSBjQDBqMhXBCEQmKQBMYkpGQ4R",
+        "id": "stamp_collection:4z35e56e6cewtygczhtm"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:dbyxxadn3yit98mgd09k",
+        "name": "Sunny Side Up Senpai"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:dik645fo37c34hals0k7",
+        "name": "Credible Finance"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:hbitm2v0fp1j10cz33a2",
+        "name": "Oshy Toy Shop"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:jiemndsm3pft6tckmsil",
+        "name": "ZetaChain"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:k20rd58jdcs7obhiygis",
+        "name": "Solayer"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:t01h8zh8qn5uefxvpk8w",
+        "name": "CoinEx"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:tss47u0448xv0mg6fiio",
+        "name": "Jambo"
+      },
+      "minted": 0
+    },
+    {
+      "booth": {
+        "id": "booth:y35mwre31hnev8wuol1e",
+        "name": "Rivalz"
+      },
+      "stamp": {
+        "boothId": "y35mwre31hnev8wuol1e",
+        "collectionMetadataUri": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/sponsors/rivalz.json",
+        "collectionName": "BCC2024 Mindanao (Rivalz)",
+        "collectionPubkey": "DjUePshZCz8WAqg53WhigXJdvDktLMFWak2TK6BCJRcv",
+        "id": "stamp_collection:ai53wmxd6of9szhsi43e"
+      },
+      "minted": 0
+    }
+  ]

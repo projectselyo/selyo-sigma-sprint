@@ -1,0 +1,19 @@
+{
+    "name": "BCC2024 Mindanao Cosplay Challenge",
+    "description": "Cosplay Challenge During Blockchain Campus Conference 2024 Mindanao",
+    "options": [
+      {
+        "name": "option1",
+        "metadataUrl": ""
+      },
+          {
+        "name": "option2",
+        "metadataUrl": ""
+      }
+      ,
+          {
+        "name": "option3",
+        "metadataUrl": ""
+      }
+    ]
+  }

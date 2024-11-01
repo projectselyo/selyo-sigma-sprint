@@ -1,0 +1,32 @@
+# TIMESTAMP
+curl --request POST \
+  --url http://localhost:3000/timestamp/in \
+  --header 'content-type: application/json' \
+  --data '{
+  "uid": "B369AD2A"
+}'
+
+loadtest --maxSeconds 60 -c 4 --rps 10 -T application/json -m POST --postBody '{"uid":"B369AD2A"}' http://localhost:3000/timestamp/in
+
+
+
+# BOOTHSTAMP NFT
+curl --request POST \
+  --url http://localhost:3000/booth/6ntufzwzctfruqt8akqs/stamp \
+  --header 'content-type: application/json' \
+  --data '{
+  "uid": "A638433D"
+}'
+
+loadtest --maxSeconds 60 -c 1 --rps 1  -T application/json -m POST --postBody '{"uid":"A638433D"}' https://api.zelyo.quest/booth/6ntufzwzctfruqt8akqs/stamp
+
+
+# Vote
+curl --request POST \
+  --url https://api.zelyo.quest/vote/cdmxojrouz326diq6k7z/select/markhughneri \
+  --header 'content-type: application/json' \
+  --data '{
+  "email": "mh.neri@gmail.com"
+}'
+
+loadtest --maxSeconds 60 -c 1 --rps 0.2  -T application/json -m POST --postBody '{"email":"mh.neri@gmail.com"}' http://localhost:3000/vote/yhss88ahlskz68ywpnqr/select/mark

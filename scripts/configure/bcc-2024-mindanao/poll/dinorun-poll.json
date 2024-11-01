@@ -1,0 +1,31 @@
+{
+  "name": "BCC2024 Mindanao Dino Run Exchange",
+  "description": "A Fun Dino Run Representing the bext Crypto Exchanges during Blockchain Campus Conference 2024 Mindanao",
+  "options": [
+    {
+      "name": "lbank",
+      "metadataUrl": "https://github.com/projectselyo/metadata/blob/main/bcc/2024/mindanao/vote/lbank.json",
+      "imageUrl": "https://i.imgur.com/I4tKIm6.jpeg"
+    },
+    {
+      "name": "okx",
+      "metadataUrl": "https://github.com/projectselyo/metadata/blob/main/bcc/2024/mindanao/vote/okx.json",
+      "imageUrl": "https://i.imgur.com/xto2sE4.jpeg"
+    },
+    {
+      "name": "bitget",
+      "metadataUrl": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/vote/bitget.json",
+      "imageUrl": "https://i.imgur.com/K7o6hJ5.jpeg"
+    },
+    {
+      "name": "backpack",
+      "metadataUrl": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/vote/backpack.json",
+      "imageUrl": "https://i.imgur.com/lSPfLD6.jpeg"
+    },
+    {
+      "name": "coinex",
+      "metadataUrl": "https://raw.githubusercontent.com/projectselyo/metadata/refs/heads/main/bcc/2024/mindanao/vote/coinex.json",
+      "imageUrl": "https://i.imgur.com/a97eah0.jpeg"
+    }
+  ]
+}
